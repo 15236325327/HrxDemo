@@ -1,0 +1,34 @@
+package zixue;
+
+import java.util.Scanner;
+
+public class IfText1 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("请输入一个星期数:");
+
+        int week = sc.nextInt();
+
+        if (week < 1 || week > 7) {
+            System.out.println("你输入的星期数有误！");
+        } else if (week == 1) {
+            System.out.println("跑步");
+        } else if (week == 2) {
+            System.out.println("爬山");
+        } else if (week == 3) {
+            System.out.println("游泳");
+        } else if (week == 4) {
+            System.out.println("打篮球");
+        } else if (week == 5) {
+            System.out.println("踢足球");
+        } else if (week == 6) {
+            System.out.println("打网球");
+        } else {
+            System.out.println("好好吃一顿");
+        }
+    }
+
+}
